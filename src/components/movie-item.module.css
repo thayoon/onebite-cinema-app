@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+}
+
+.container > img {
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.container:hover .title {
+  opacity: 0.8;
+}
+
+.title > p {
+  color: white;
+  text-align: center;
+}
+
+.titleText {
+  font-size: x-large;
+  font-weight: bold;
+}
+.subTitle {
+  font-size: medium;
+}
