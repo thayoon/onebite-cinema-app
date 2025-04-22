@@ -1,0 +1,38 @@
+.reco_conatiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.all_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.posterImgUrl {
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+  border-radius: 8px;
+  animation: skeleton-loading 1.2s infinite ease-in-out;
+}
+
+.reco {
+  aspect-ratio: 263 / 395;
+}
+
+.all {
+  aspect-ratio: 156 / 234;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #505050;
+  }
+  50% {
+    background-color: #707070;
+  }
+  100% {
+    background-color: #505050;
+  }
+}
